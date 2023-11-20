@@ -11,9 +11,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter a number");
-        int n = in.nextInt();
-        func(1,n);
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.println("Enter a number");
+            int n = in.nextInt();
+            func(1,n);
+        }
     }
 }

@@ -10,9 +10,10 @@ public class firstNSumFunctional {
 
     public static void main(String[] args) {
         System.out.println("Enter a number to find it's sum :");
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        int sum = Sum(n);
-        System.out.println("Sum = " + sum);
+        try (Scanner in = new Scanner(System.in)) {
+            int n = in.nextInt();
+            int sum = Sum(n);
+            System.out.println("Sum = " + sum);
+        }
     }
 }

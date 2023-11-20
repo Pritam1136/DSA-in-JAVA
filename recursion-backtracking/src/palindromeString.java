@@ -12,15 +12,16 @@ public class palindromeString {
         return palindrome(name, i+1);
     }
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        String name;
-        System.out.println("Enter the string :");
-        name = in.next();
-        boolean paling = palindrome(name, 0);
-        if (paling){
-            System.out.println("It is palindrome.");
-        }else {
-            System.out.println("It is not palindrome. ");
+        try (Scanner in = new Scanner(System.in)) {
+            String name;
+            System.out.println("Enter the string :");
+            name = in.next();
+            boolean paling = palindrome(name, 0);
+            if (paling){
+                System.out.println("It is palindrome.");
+            }else {
+                System.out.println("It is not palindrome. ");
+            }
         }
         }
 }

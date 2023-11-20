@@ -11,9 +11,10 @@ public class oneton {
     }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter a number");
-        int n = in.nextInt();
-        func(n);
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.println("Enter a number");
+            int n = in.nextInt();
+            func(n);
+        }
     }
 }
