@@ -2,7 +2,12 @@ import java.util.Scanner;
 
 public class hash {
     static Scanner in = new Scanner(System.in);
-    static int[] hash = new int[(int) (1e7 + 1)];
+    static int[] hash;
+
+    static {
+        hash = new int[(int) (1e7 + 1)];
+    }
+
     static void hashing(int[] arr, int n){
         //        precompute
         for (int i = 0; i < n; i++) {
