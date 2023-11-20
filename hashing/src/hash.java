@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class hash {
     static Scanner in = new Scanner(System.in);
-    static void hash(int[] arr, int n){
+    static int[] hash = new int[(int) (1e7 + 1)];
+    static void hashing(int[] arr, int n){
         //        precompute
-        int hash[] = new int[100];
         for (int i = 0; i < n; i++) {
             hash[arr[i]] += 1;
         }
@@ -30,6 +30,6 @@ public class hash {
         for (int i = 0; i <n; i++) {
             arr[i] = in.nextInt();
         }
-        hash(arr,n);
+        hashing(arr,n);
     }
 }
