@@ -28,4 +28,4 @@ public class insertionSort {
         }
     }
 }
-// time complexity =O(n)
+// time complexity = O(n^2)

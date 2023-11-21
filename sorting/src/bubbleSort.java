@@ -28,3 +28,4 @@ public class bubbleSort {
         }
     }
 }
+// time complexity = O(n^2)
