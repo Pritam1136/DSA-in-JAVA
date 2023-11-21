@@ -57,3 +57,4 @@ public class mergeSort {
     }
 }
 // merge sort is better because it has better time complexity.
+// Time complexity = O(n + log(n))
