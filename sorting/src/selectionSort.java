@@ -2,13 +2,18 @@ import java.util.Scanner;
 
 public class selectionSort {
     static void selection(int[] arr){
-        for (int i = 0; i < arr.length -1; i++) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            int swap = 0;
             for (int k = i; k < arr.length ; k++) {
                 if (arr[k] < arr[i]){
                     int temp = arr[k];
                     arr[k] = arr[i];
                     arr[i] = temp;
+                    swap = 1;
                 }
+            }
+            if (swap == 0){
+                break;
             }
         }
         for (int i : arr) {
