@@ -11,8 +11,8 @@ public class greatestNumber {
         }
         System.out.println(max);
     }
-    static void secondlardest(int[] arr){
-//        O2(n)
+    static void secondlargest(int[] arr){
+//        O(2n)
         int max = arr[0];
         for (int j : arr) {
             if (j > max) {
@@ -25,7 +25,12 @@ public class greatestNumber {
                 secondLargest = j;
             }
         }
-        System.out.println(secondLargest);
+        if (secondLargest == -1) {
+            System.out.println(arr[arr.length - 1]);
+        }
+        else {
+            System.out.println(secondLargest);
+        }
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -36,7 +41,7 @@ public class greatestNumber {
             arr[i] = in.nextInt();
         }
         largest(arr);
-        secondlardest(arr);
+        secondlargest(arr);
     }
 }
 // Maximum size of array that you can define in main function is 10^6
