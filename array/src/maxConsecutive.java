@@ -1,5 +1,5 @@
-public class maxConcicutive {
-    static void consicutive(int[] arr){
+public class maxConsecutive {
+    static void consecutive(int[] arr){
         int flag = 0;
         int max = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -14,6 +14,6 @@ public class maxConcicutive {
     }
     public static void main(String[] args) {
         int [] arr = {1,1,1,1,1,1,1,1,0,0,0,1,0,0,1,1,1,0,0,0,0,1,1,1,1,1,1,2,1,1,1,1};
-        consicutive(arr);
+        consecutive(arr);
     }
 }
