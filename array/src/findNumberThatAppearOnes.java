@@ -1,4 +1,4 @@
-public class findNumberThatApperOnes {
+public class findNumberThatAppearOnes {
     public static void Ones(int[] arr){
         int xor = 0;
         for (int j : arr) {
