@@ -25,3 +25,5 @@ public class sumKPositive {
         System.out.println(answer);
     }
 }
+// TC = O(2n)
+// SC = O(1)
