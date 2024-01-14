@@ -22,3 +22,5 @@ public class leader {
         leaderInArray(arr);
     }
 }
+// TC =O(1)
+// SC =O(n)
