@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -23,7 +24,7 @@ public class longestConsecutiveSequence {
         return longest;
     }
     public static void main(String[] args) {
-        int[] arr = {102, 4 , 100 , 1, 101, 3, 2, 1, 1, 1, 5, 5, 103};
+        int[] arr = {102, 4 , 4, 5, 5, 6, 100 , 1, 101, 3, 2, 1, 1, 1, 103, 104, 108, 107, 106, 105, 105};
         int length = consecutive(arr);
         System.out.println(length);
     }

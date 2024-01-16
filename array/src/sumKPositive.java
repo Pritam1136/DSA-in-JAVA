@@ -20,8 +20,8 @@ public class sumKPositive {
         return maxLen;
     }
     public static void main(String[] args) {
-        int[] arr = {1,2,1,2,1};
-       int answer = sumL(arr,3);
+        int[] arr = {1,2,1,1,1,1};
+       int answer = sumL(arr,6);
         System.out.println(answer);
     }
 }
