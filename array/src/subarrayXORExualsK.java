@@ -1,18 +1,19 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
-public class arraysSumEqualsK {
-    public static int findAllSubarraysWithGivenSum(int arr[], int k) {
+public class subarrayXORExualsK {
+    static void subarray(int [] arr, int k){
         int n = arr.length; // size of the given array.
         Map<Integer, Integer> mpp = new HashMap<>();
         int preSum = 0, cnt = 0;
 
         mpp.put(0, 1); // Setting 0 in the map.
         for (int i = 0; i < n; i++) {
-            // add current element to prefix Sum:
-            preSum += arr[i];
+            // XOR current element to prefix Sum:
+            preSum ^= arr[i];
 
-            // Calculate x-k:
-            int remove = preSum - k;
+            // Calculate x^k:
+            int remove = preSum ^ k;
 
             // Add the number of subarrays to be removed:
             cnt += mpp.getOrDefault(remove, 0);
@@ -21,15 +22,11 @@ public class arraysSumEqualsK {
             // in the map.
             mpp.put(preSum, mpp.getOrDefault(preSum, 0) + 1);
         }
-        return cnt;
+        System.out.println(cnt);
     }
-
     public static void main(String[] args) {
-        int[] arr = {3, 1, 2, 4, 2};
+        int arr[] = {4,2,2,6,4};
         int k = 6;
-        int cnt = findAllSubarraysWithGivenSum(arr, k);
-        System.out.println("The number of subarrays is: " + cnt);
+        subarray(arr , k);
     }
 }
-// TC: O(n * log n)
-// SC: O(n)
