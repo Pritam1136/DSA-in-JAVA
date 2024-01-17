@@ -22,7 +22,12 @@ public class fourSum {
                 while (k < l) {
                     long sum = nums[i] + nums[j] + nums[k] + nums[l];
 
-                    if (sum == target) {
+                    if (sum < target){
+                        k++;
+                    } else if (sum > target) {
+                        l--;
+                    }
+                     else if (sum == target) {
                         List<Integer> temp = new ArrayList<>();
                         temp.add(nums[i]);
                         temp.add(nums[j]);
@@ -35,14 +40,13 @@ public class fourSum {
                         // skip the duplicates:
                         while (k < l && nums[k] == nums[k - 1]) k++;
                         while (k < l && nums[l] == nums[l + 1]) l--;
-                    } else if (sum < target) k++;
-                    else l--;
+                    }
                 }
             }
         }
-        for (List<Integer> list: ans){
+        for (List<Integer> List: ans){
             System.out.print("[");
-            for (int i = 0; i < list.size(); i++) {
+            for (Integer i: List) {
                 System.out.print(i + " ");
             }
             System.out.print("]");
