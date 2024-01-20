@@ -69,3 +69,5 @@ public class reversePair {
         System.out.println("The number of reverse pair is: " + cnt);
     }
 }
+//TC : O(2n * log(n))
+//SC : O(n)
