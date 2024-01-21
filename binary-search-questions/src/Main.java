@@ -4,7 +4,7 @@ public class Main {
         int low = 0,high = arr.length - 1;
        int n = 17;
        while (low <= high){
-           int mid = (low + high)/ 2;
+           int mid = (low + (high - low)) / 2;
            if (arr[mid] == n){
                System.out.println("number found");
                break;
@@ -18,3 +18,5 @@ public class Main {
        }
     }
 }
+//TC: O(log(base 2)(n))
+//SC: O(1)
