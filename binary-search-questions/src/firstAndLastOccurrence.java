@@ -14,7 +14,7 @@ public class firstAndLastOccurrence {
         }
         return ans;
     }
-    static int lastOccurrance(int[] arr, int target){
+    static int lastOccurrence(int[] arr, int target){
         int n  = arr.length - 1;
         int low = 0,high = n, ans = n;
         while (low <= high){
@@ -34,7 +34,7 @@ public class firstAndLastOccurrence {
         int[] arr = {2,4,6,8,8,8,8,11,13};
         int target = 14;
        int a = fistOccurrence(arr, target);
-        int b = lastOccurrance(arr, target);
+        int b = lastOccurrence(arr, target);
         b--;
         if (a == arr.length-1 || arr[a] != target){
             System.out.println( -1 +","+ -1);

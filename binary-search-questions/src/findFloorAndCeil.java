@@ -13,21 +13,21 @@ public class findFloorAndCeil {
                 high = mid - 1;
             }
         }
-        System.out.println("Ceil is = " + ans);
+        System.out.println("Floor is = " + ans);
     }
     static void Ceil(int[] arr, int target, int n){
         int low = 0,high = n, ans = -1;
         while (low <= high){
             int mid = (low + high) / 2;
-            if (arr[mid] >= target){
+            if (arr[mid] <= target){
+                low = mid + 1;
+            }
+            else {
                 ans = arr[mid];
                 high = mid - 1;
             }
-            else {
-                low = mid + 1;
-            }
         }
-        System.out.println("Floor is = " +ans);
+        System.out.println("Ceil is = " +ans);
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
