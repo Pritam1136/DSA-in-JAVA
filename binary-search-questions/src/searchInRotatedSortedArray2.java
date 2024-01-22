@@ -44,3 +44,5 @@ public class searchInRotatedSortedArray2 {
         }
     }
 }
+// Worse case O(n/2)
+//Average case O(log n)
