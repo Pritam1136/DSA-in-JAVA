@@ -13,6 +13,7 @@ public class KthMissing {
             }
         }
         return k + low;
+//        or return k + high - 1;
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
