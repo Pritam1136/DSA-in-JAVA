@@ -27,6 +27,8 @@ public class painterPartition {
         return painter;
     }
     static int split(int [] arr, int k){
+        if (k > arr.length)
+            return -1;
         int low = maxInArray(arr), high = sumOfArray(arr);
         while (low <= high){
             int mid = (low + high) / 2;
@@ -36,7 +38,7 @@ public class painterPartition {
             else
                 low = mid + 1;
         }
-        return high;
+        return low;
     }
     public static void main(String[] args) {
         int []arr = {10,20,30,40};
