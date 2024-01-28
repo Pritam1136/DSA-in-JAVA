@@ -35,3 +35,5 @@ public class searchIn2DArray2 {
         System.out.println(Arrays.toString(ans));
     }
 }
+// TC: O(n+m)
+// SC: O(1)
