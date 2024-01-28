@@ -14,7 +14,7 @@ public class rowWithMaximum1 {
     }
     public static void main(String[] args) {
         int[] [] arr = {{0,0,1,1,1},{0,0,0,0,0},{0,1,1,1,1},{0,0,0,0,1},{0,1,1,1,1}};
-        int count = -1;
+        int count = 0;
         int index = -1;
         for (int i = 0; i < arr.length; i++) {
             int m = arr[i].length;
