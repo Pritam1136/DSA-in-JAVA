@@ -17,3 +17,7 @@ public class Main {
 //Perfect binary tree - All leaf node in same level.
 //Balance binary tree - Height of the tree at max is log(n).
 //Degenerate binary tree - Every node has only one child.
+//DFS
+//In-order Traversal - Left, Root, Right
+//Pre-order Traversal - Root, Left, Right
+//Post-order Traversal - Left, Right, Root
