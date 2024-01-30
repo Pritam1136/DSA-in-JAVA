@@ -1,6 +1,15 @@
 public class Main {
+    int data;
+    Main left;
+    Main right;
+    Main(int key){
+        data = key;
+    }
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+       Main root = new Main(1);
+        root.left = new Main(2);
+        root.right = new Main(3);
+        root.left.right = new Main(5);
     }
 }
 //Full binary tree - Either has 2 or 0 children.
