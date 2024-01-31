@@ -8,7 +8,7 @@ class Node {
         left = right = null;
     }
 }
-public class proOrderT {
+public class preOrderT {
     static ArrayList < Integer > preOrderTrav(Node curr) {
         ArrayList < Integer > preOrder = new ArrayList<>();
         if (curr == null)
