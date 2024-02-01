@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class sumnto1 {
     static void sum(int i,int n){
-        if (i < 1){
+        if (i == 0){
             System.out.println(n);
             return;
         }
