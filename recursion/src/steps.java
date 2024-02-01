@@ -7,8 +7,7 @@ public class steps {
         }
         helper ++;
         if (a % 2 == 0){
-            a = a / 2;
-            return count(a, helper);
+            return count(a/2, helper);
         } else {
             return count(a - 1 , helper);
         }
