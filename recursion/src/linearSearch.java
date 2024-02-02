@@ -17,6 +17,16 @@ public class linearSearch {
             list.add(n);
         return SearchD(arr, ++n, target, list);
     }
+    static ArrayList SearchD2 (int [] arr, int n , int target){
+        ArrayList<Integer> ans = new ArrayList<>();
+        if (n >= arr.length)
+            return ans;
+        else if (arr[n] == target)
+            ans.add(n);
+        ArrayList<Integer> ansFromBelow =  SearchD2(arr, ++n, target);
+        ans.addAll(ansFromBelow);
+        return ans;
+    }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the length of array :");
@@ -30,5 +40,6 @@ public class linearSearch {
         int target = in.nextInt();
         System.out.println(Search(arr,0, target));
         System.out.println(SearchD(arr, 0 , target, new ArrayList<>()));
+        System.out.println(SearchD2(arr, 0, target));
     }
 }
