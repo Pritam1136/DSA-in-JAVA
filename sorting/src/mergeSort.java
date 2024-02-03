@@ -43,7 +43,7 @@ public class mergeSort {
     }
 
     public static void main(String[] args) {
-        try (Scanner in = new Scanner(System.in)){
+       Scanner in = new Scanner(System.in);
             System.out.println("Enter the length of array :");
             int n = in.nextInt();
             int [] arr = new int[n];
@@ -53,8 +53,7 @@ public class mergeSort {
             }
             arr = merge(arr);
             System.out.println(Arrays.toString(arr));
-        }
     }
 }
-// merge sort is better because it has better time complexity.
+// Merge sort is better because it has better time complexity.
 // Time complexity = O(n + log(n))
