@@ -1,9 +1,7 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class letterCombination {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
         pad("", "12");
         System.out.println(pad1("", "123"));
     }
