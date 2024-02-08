@@ -1,4 +1,19 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class subSequence {
+    static ArrayList<String> sub1(String p, String up){
+        if (up.isEmpty()){
+            ArrayList <String> list = new ArrayList<>();
+            list.add(p);
+            return list;
+        }
+        char ch = up.charAt(0);
+        ArrayList<String> list = new ArrayList<>();
+        list.addAll(sub1(p+ch, up.substring(1)));
+        list.addAll(sub1( p, up.substring(1)));
+        return list;
+    }
     static void sub(String q, String p){
         if (p.isEmpty()){
             System.out.println(q);
@@ -23,7 +38,8 @@ public class subSequence {
         sub(q,p.substring(1));
     }
     public static void main(String[] args) {
-        sub("", "abcd");
-        subASCII("", "abcd");
+        System.out.println(sub1("", "abc"));
+        sub("", "abc");
+//        subASCII("", "abcd");
     }
 }
