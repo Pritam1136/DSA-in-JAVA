@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Main {
+public class maze {
     public static void main(String[] args) {
         System.out.println(ways(3,3));
         path("", 3, 3);
