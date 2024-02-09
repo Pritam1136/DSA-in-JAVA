@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class mazeWithObstacles {
     public static void main(String[] args) {
         boolean[][] board = {
