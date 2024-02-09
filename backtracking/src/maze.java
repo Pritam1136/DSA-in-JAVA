@@ -28,6 +28,8 @@ mazeInAllDirection("", board,0,0);
         if (c > 0){
             mazeInAllDirection(p+ 'L', maze, r, c-1);
         }
+//        This line is where the function will get over
+//        so before the function gets over, also remove the changes that were made by that function.
         maze[r][c] = true;
     }
 }
