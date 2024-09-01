@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4bd9eab-0138-457a-9e89-b2015dc173be" name="Changes" comment="" />
+    <list default="true" id="496ca9ee-00a1-422d-9b79-a225928f5274" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/DSA-in-JAVA.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/Basics.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/src/Input.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/src/Sum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/src/TypeCasting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/methods/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/methods/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/methods/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/methods/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/methods/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/methods/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/methods/methods.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/methods/src/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/methods/src/Err.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/methods/src/Sum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/oop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/src/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,24 +43,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2fz9foLzuaoCkvFBdWzubvJHMbB" />
+  <component name="ProjectId" id="2lTPetmY9yW9c86F33pZkMRRgs9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DELL/Documents/git/DSA-in-JAVA/recursion&quot;,
+    &quot;two.files.diff.last.used.folder&quot;: &quot;C:/Users/DELL/Documents/git/DSA-in-JAVA/recursion&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e4bd9eab-0138-457a-9e89-b2015dc173be" name="Changes" comment="" />
-      <created>1714793147427</created>
+      <changelist id="496ca9ee-00a1-422d-9b79-a225928f5274" name="Changes" comment="" />
+      <created>1725201197008</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714793147427</updated>
+      <updated>1725201197008</updated>
     </task>
     <servers />
   </component>
