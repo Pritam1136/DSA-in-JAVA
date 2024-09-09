@@ -34,14 +34,13 @@ class Solutions {
         }
     }
     public static void quickSort(List<Integer> arr) {
-        // Write your code here.
         qs(arr, 0, arr.size() - 1);
     }
 }
 
 public class QuickSort {
     public static void main(String[] args) {
-        List<Integer> arr = new ArrayList<>();
+        List<Integer> arr;
         arr = Arrays.asList(4, 6, 2, 5, 7, 9, 1, 3);
         int n = arr.size();
         System.out.println("Before Using insertion Sort: ");
