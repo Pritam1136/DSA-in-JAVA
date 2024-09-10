@@ -57,3 +57,5 @@ public class QuickSort {
     }
 
 }
+// TC = N log N
+// SC = O(1)
