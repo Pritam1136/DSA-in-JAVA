@@ -12,7 +12,7 @@ public class LongestConsecutiveSequence {
         int longest = 1;
         Set<Integer> set = new HashSet<>();
 
-        // put all the array elements into set
+        // put all the array elements into a set
         for (int j : a) {
             set.add(j);
         }
