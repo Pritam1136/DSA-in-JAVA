@@ -32,7 +32,7 @@ public class TwoSum {
     }
     public static void main(String[] args) {
         int[] arr = {2,6,5,8,11};
-        System.out.println(Sum(arr,100));
+        System.out.println(Sum(arr,7));
         System.out.println(Arrays.toString(twoSum(arr.length, arr, 11)));
     }
 }
