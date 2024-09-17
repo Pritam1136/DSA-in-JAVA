@@ -9,9 +9,9 @@ public class NumberOfSubarrayXOR {
         mpp.put(xr, 1); //setting the value of 0.
         int cnt = 0;
 
-        for (int i = 0; i < n; i++) {
+        for (int j : a) {
             // prefix XOR till index i:
-            xr = xr ^ a[i];
+            xr = xr ^ j;
 
             //By formula: x = xr^k:
             int x = xr ^ k;
