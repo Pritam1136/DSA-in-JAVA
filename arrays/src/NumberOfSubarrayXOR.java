@@ -37,8 +37,9 @@ public class NumberOfSubarrayXOR {
         int[] a = {4, 2, 2, 6, 4};
         int k = 6;
         int ans = subarraysWithXorK(a, k);
-        System.out.println("The number of subarrays with XOR k is: " + ans);
+        System.out.println("The number of sub-arrays with XOR k is: " + ans);
     }
 }
-
+// Time complexity = O(n)
+// Space complexity = O(n)
 
