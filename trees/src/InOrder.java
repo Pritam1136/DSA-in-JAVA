@@ -9,7 +9,7 @@ class Node1 {
     }
 }
 
-class InOrder {
+public class InOrder {
     Node1 root;
 
     void printInorder(Node1 node) {

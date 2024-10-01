@@ -8,7 +8,7 @@ class Node {
     }
 }
 
-class InOrder {
+class PreOrder {
     Node root;
 
     void printPreorder(Node node) {
@@ -28,7 +28,7 @@ class InOrder {
     }
 
     public static void main(String[] args) {
-        InOrder tree = new InOrder();
+        PreOrder tree = new PreOrder();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
         tree.root.right = new Node(3);
