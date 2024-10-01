@@ -1,41 +1,43 @@
-class Node {
+class Node1 {
     int data;
-    Node left, right;
+    Node1 left;
+    Node1 right;
 
-    public Node(int item) {
+    public Node1(int item) {
         data = item;
         left = right = null;
     }
 }
+class  PreOrder {
+    Node1 root;
 
-class PreOrder {
-    Node root;
-
-    void printPreorder(Node node) {
+    void printInorder(Node1 node) {
         if (node == null)
             return;
 
+        // Recur on left subtree
+        printInorder(node.left);
         // Print data of node
         System.out.print(node.data + " ");
-        // Recur on left subtree
-        printPreorder(node.left);
         // Recur on right subtree
-        printPreorder(node.right);
+        printInorder(node.right);
     }
 
-    void printPreorder() {
-        printPreorder(root);
+    void printInorder() {
+        printInorder(root);
     }
 
     public static void main(String[] args) {
         PreOrder tree = new PreOrder();
-        tree.root = new Node(1);
-        tree.root.left = new Node(2);
-        tree.root.right = new Node(3);
-        tree.root.left.left = new Node(4);
-        tree.root.left.right = new Node(5);
+        tree.root = new Node1(1);
+        tree.root.left = new Node1(2);
+        tree.root.right = new Node1(3);
+        tree.root.left.left = new Node1(4);
+        tree.root.left.right = new Node1(5);
 
-        System.out.println("Preorder traversal:");
-        tree.printPreorder();
+        System.out.println("Inorder traversal:");
+        tree.printInorder();
     }
 }
+
+
