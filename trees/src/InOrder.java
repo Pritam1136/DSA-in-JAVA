@@ -11,20 +11,20 @@ class Node {
 class InOrder {
     Node root;
 
-    void printPreorder(Node node) {
+    void printInorder(Node node) {
         if (node == null)
             return;
 
+        // Recur on left subtree
+        printInorder(node.left);
         // Print data of node
         System.out.print(node.data + " ");
-        // Recur on left subtree
-        printPreorder(node.left);
         // Recur on right subtree
-        printPreorder(node.right);
+        printInorder(node.right);
     }
 
-    void printPreorder() {
-        printPreorder(root);
+    void printInorder() {
+        printInorder(root);
     }
 
     public static void main(String[] args) {
@@ -37,6 +37,6 @@ class InOrder {
         tree.root.right.left = new Node(6);
 
         System.out.println("Preorder traversal:");
-        tree.printPreorder();
+        tree.printInorder();
     }
 }
