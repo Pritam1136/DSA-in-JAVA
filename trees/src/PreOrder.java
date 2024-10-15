@@ -35,7 +35,7 @@ class  PreOrder {
         tree.root.left.left = new Node1(4);
         tree.root.left.right = new Node1(5);
 
-        System.out.println("Inorder traversal:");
+        System.out.println("Preorder traversal:");
         tree.printPreorder();
     }
 }
