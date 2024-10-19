@@ -41,6 +41,8 @@ public class LevelOrderTraversal {
         root.right = new TreeNode(20);
         root.right.left = new TreeNode(15);
         root.right.right = new TreeNode(7);
+        root.left.left = new TreeNode(15);
+        root.left.right = new TreeNode(7);
 
         LevelOrderTraversal solution = new LevelOrderTraversal();
         List<List<Integer>> result = solution.levelOrder(root);

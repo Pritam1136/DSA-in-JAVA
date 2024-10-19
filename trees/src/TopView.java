@@ -20,7 +20,7 @@ public class TopView {
             return;
         }
 
-        Map<Integer, Node> topViewMap = new TreeMap<>();
+        Map<Integer, Integer> topViewMap = new TreeMap<>();
         Queue<Pair> queue = new LinkedList<>();
 
         queue.add(new Pair(root, 0)); // start with the root at horizontal distance 0
@@ -32,7 +32,7 @@ public class TopView {
 
             // If no node has been recorded at this horizontal distance, add it
             if (!topViewMap.containsKey(hd)) {
-                topViewMap.put(hd, tempNode);
+                topViewMap.put(hd, tempNode.data);
             }
 
             // Move to the left and right children with respective horizontal distances
@@ -45,8 +45,8 @@ public class TopView {
             }
         }
 
-        for (Map.Entry<Integer, Node> entry : topViewMap.entrySet()) {
-            System.out.print(entry.getValue().data + " ");
+        for (int i : topViewMap.values()) {
+            System.out.println(i);
         }
     }
 
