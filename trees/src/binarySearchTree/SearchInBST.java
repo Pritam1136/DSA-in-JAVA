@@ -1,14 +1,16 @@
 package binarySearchTree;
 
-public class SearchInBST {
-    static class Treenode{
-        int val;
-        Treenode left, right;
-        Treenode(int val){
-            this.val = val;
-            left = right = null;
-        }
+class Treenode{
+    int val;
+    Treenode left;
+    Treenode right;
+    Treenode(int val){
+        this.val = val;
+        left = right = null;
     }
+}
+
+public class SearchInBST {
     static public Treenode searchBST(Treenode root, int val){
         while (root != null && root.val != val){
             root = val < root.val ? root.left : root.right;
