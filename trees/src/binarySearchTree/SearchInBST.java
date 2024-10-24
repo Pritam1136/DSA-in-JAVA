@@ -1,17 +1,7 @@
 package binarySearchTree;
 
-class Treenode{
-    int val;
-    Treenode left;
-    Treenode right;
-    Treenode(int val){
-        this.val = val;
-        left = right = null;
-    }
-}
-
 public class SearchInBST {
-    static public Treenode searchBST(Treenode root, int val){
+    static public TreeNode1 searchBST(TreeNode1 root, int val){
         while (root != null && root.val != val){
             root = val < root.val ? root.left : root.right;
         }
@@ -19,9 +9,9 @@ public class SearchInBST {
     }
 
     public static void main(String[] args) {
-        Treenode root = new Treenode(10);
-        root.left = new Treenode(2);
-        root.right = new Treenode(20);
+        TreeNode1 root = new TreeNode1(10);
+        root.left = new TreeNode1(2);
+        root.right = new TreeNode1(20);
         System.out.println(searchBST(root, 20).val);
     }
 }

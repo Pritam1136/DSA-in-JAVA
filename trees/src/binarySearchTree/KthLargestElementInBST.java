@@ -1,13 +1,13 @@
 package binarySearchTree;
 
 public class KthLargestElementInBST {
-    public int kthLargest(Treenode root, int k) {
+    public int kthLargest(TreeNode1 root, int k) {
         int[] result = new int[2]; // result[0]: count, result[1]: kth largest value
         findKthLargest(root, k, result);
         return result[1];
     }
 
-    private void findKthLargest(Treenode node, int k, int[] result) {
+    private void findKthLargest(TreeNode1 node, int k, int[] result) {
         if (node == null) return;
 
         findKthLargest(node.right, k, result); // Reverse in-order traversal
@@ -21,12 +21,12 @@ public class KthLargestElementInBST {
     }
 
     public static void main(String[] args) {
-        Treenode root = new Treenode(5);
-        root.left = new Treenode(3);
-        root.right = new Treenode(6);
-        root.left.left = new Treenode(2);
-        root.left.right = new Treenode(4);
-        root.left.left.left = new Treenode(1);
+        TreeNode1 root = new TreeNode1(5);
+        root.left = new TreeNode1(3);
+        root.right = new TreeNode1(6);
+        root.left.left = new TreeNode1(2);
+        root.left.right = new TreeNode1(4);
+        root.left.left.left = new TreeNode1(1);
 
         KthLargestElementInBST solution = new KthLargestElementInBST();
         int k = 2;

@@ -1,7 +1,7 @@
 package binarySearchTree;
 
 public class FloorInBST {
-    static public int floor(Treenode root, int val) {
+    static public int floor(TreeNode1 root, int val) {
         int floor = -1;
         while (root != null) {
             if (root.val == val) {
@@ -17,11 +17,11 @@ public class FloorInBST {
     }
 
     public static void main(String[] args) {
-        Treenode root = new Treenode(10);
-        root.left = new Treenode(2);
-        root.right = new Treenode(12);
-        root.left.left = new Treenode(1);
-        root.left.right = new Treenode(5);
+        TreeNode1 root = new TreeNode1(10);
+        root.left = new TreeNode1(2);
+        root.right = new TreeNode1(12);
+        root.left.left = new TreeNode1(1);
+        root.left.right = new TreeNode1(5);
 
         System.out.println(floor(root, 11)); // Output should be 10
         System.out.println(floor(root, 6));  // Output should be 5

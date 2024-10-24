@@ -1,7 +1,7 @@
 package binarySearchTree;
 
 public class CeilInBST {
-    static public int ceil(Treenode root, int val){
+    static public int ceil(TreeNode1 root, int val){
         int ceil = -1;
         while (root != null){
             if (root.val == val){
@@ -16,11 +16,11 @@ public class CeilInBST {
         return ceil;
     }
     public static void main(String[] args) {
-        Treenode root = new Treenode(10);
-        root.left = new Treenode(2);
-        root.right = new Treenode(12);
-        root.left.left = new Treenode(1);
-        root.left.right = new Treenode(5);
+        TreeNode1 root = new TreeNode1(10);
+        root.left = new TreeNode1(2);
+        root.right = new TreeNode1(12);
+        root.left.left = new TreeNode1(1);
+        root.left.right = new TreeNode1(5);
 
         System.out.println(ceil(root, 11));
         System.out.println(ceil(root, 6));

@@ -1,25 +1,25 @@
 package binarySearchTree;
 
 public class InsertANodeInBST {
-    static public Treenode insert(Treenode root, int val) {
+    static public TreeNode1 insert(TreeNode1 root, int val) {
         if (root == null) {
-            return new Treenode(val);
+            return new TreeNode1(val);
         }
 
-        Treenode current = root;
+        TreeNode1 current = root;
         while (true) {
             if (val > current.val) {
                 if (current.right != null) {
                     current = current.right;
                 } else {
-                    current.right = new Treenode(val);
+                    current.right = new TreeNode1(val);
                     break;
                 }
             } else {
                 if (current.left != null) {
                     current = current.left;
                 } else {
-                    current.left = new Treenode(val);
+                    current.left = new TreeNode1(val);
                     break;
                 }
             }
@@ -28,9 +28,9 @@ public class InsertANodeInBST {
     }
 
     public static void main(String[] args) {
-        Treenode root = new Treenode(10);
-        root.left = new Treenode(5);
-        root.right = new Treenode(15);
+        TreeNode1 root = new TreeNode1(10);
+        root.left = new TreeNode1(5);
+        root.right = new TreeNode1(15);
 
         root = insert(root, 12);
         root = insert(root, 3);
@@ -39,7 +39,7 @@ public class InsertANodeInBST {
         printInOrder(root);
     }
 
-    public static void printInOrder(Treenode root) {
+    public static void printInOrder(TreeNode1 root) {
         if (root != null) {
             printInOrder(root.left);
             System.out.print(root.val + " ");

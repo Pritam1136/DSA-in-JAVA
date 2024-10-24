@@ -1,7 +1,7 @@
 package binarySearchTree;
 
 public class DeleteANodeInBST {
-    public Treenode deleteNode(Treenode root, int key) {
+    public TreeNode1 deleteNode(TreeNode1 root, int key) {
         if (root == null) return null;
 
         // Navigate to the node to be deleted
@@ -15,14 +15,14 @@ public class DeleteANodeInBST {
             if (root.right == null) return root.left;
 
             // Node with two children: Get the inorder successor (smallest in the right subtree)
-            Treenode minNode = findMin(root.right);
+            TreeNode1 minNode = findMin(root.right);
             root.val = minNode.val;
             root.right = deleteNode(root.right, root.val);
         }
         return root;
     }
 
-    private Treenode findMin(Treenode root) {
+    private TreeNode1 findMin(TreeNode1 root) {
         while (root.left != null) {
             root = root.left;
         }
@@ -30,13 +30,13 @@ public class DeleteANodeInBST {
     }
 
     public static void main(String[] args) {
-        Treenode root = new Treenode(10);
-        root.left = new Treenode(5);
-        root.right = new Treenode(15);
-        root.left.left = new Treenode(3);
-        root.left.right = new Treenode(7);
-        root.right.left = new Treenode(12);
-        root.right.right = new Treenode(18);
+        TreeNode1 root = new TreeNode1(10);
+        root.left = new TreeNode1(5);
+        root.right = new TreeNode1(15);
+        root.left.left = new TreeNode1(3);
+        root.left.right = new TreeNode1(7);
+        root.right.left = new TreeNode1(12);
+        root.right.right = new TreeNode1(18);
 
         DeleteANodeInBST solution = new DeleteANodeInBST();
         System.out.println("BST before deletion:");
@@ -47,7 +47,7 @@ public class DeleteANodeInBST {
         printInOrder(root);
     }
 
-    public static void printInOrder(Treenode root) {
+    public static void printInOrder(TreeNode1 root) {
         if (root != null) {
             printInOrder(root.left);
             System.out.print(root.val + " ");
