@@ -2,27 +2,28 @@ import java.util.*;
 
 public class Main {
     private int vertices;
-    private LinkedList<Integer> adjacencyList[];
+    private LinkedList<Integer>[] list;
 
     // Constructor
     public Main(int v) {
         vertices = v;
-        adjacencyList = new LinkedList[v];
+        list = new LinkedList[v];
         for (int i = 0; i < v; ++i) {
-            adjacencyList[i] = new LinkedList<>();
+            list[i] = new LinkedList<>();
         }
     }
 
     // Function to add an edge into the graph
     void addEdge(int v, int w) {
-        adjacencyList[v].add(w); // Add w to v's list.
+        list[v].add(w); // Add w to v's list.
+        list[v].add(v);
     }
 
     // Function to print the adjacency list representation of graph
     void printGraph() {
         for (int i = 0; i < vertices; ++i) {
             System.out.print("Vertex " + i + ":");
-            for (Integer node : adjacencyList[i]) {
+            for (Integer node : list[i]) {
                 System.out.print(" -> " + node);
             }
             System.out.println();
