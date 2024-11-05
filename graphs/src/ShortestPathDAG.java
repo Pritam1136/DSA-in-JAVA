@@ -2,17 +2,9 @@ import java.util.*;
 
 public class ShortestPathDAG {
     private int vertices;
-    private LinkedList<Edge>[] adjacencyList;
+    private LinkedList<int[]>[] adjacencyList;
 
-    class Edge {
-        int target, weight;
-        Edge(int target, int weight) {
-            this.target = target;
-            this.weight = weight;
-        }
-    }
-
-    ShortestPathDAG(int v) {
+    public ShortestPathDAG(int v) {
         vertices = v;
         adjacencyList = new LinkedList[v];
         for (int i = 0; i < v; ++i) {
@@ -21,7 +13,7 @@ public class ShortestPathDAG {
     }
 
     void addEdge(int v, int w, int weight) {
-        adjacencyList[v].add(new Edge(w, weight));
+        adjacencyList[v].add(new int[]{w, weight});
     }
 
     public void shortestPath(int start) {
@@ -42,9 +34,11 @@ public class ShortestPathDAG {
             int u = stack.pop();
 
             if (distances[u] != Integer.MAX_VALUE) {
-                for (Edge edge : adjacencyList[u]) {
-                    if (distances[edge.target] > distances[u] + edge.weight) {
-                        distances[edge.target] = distances[u] + edge.weight;
+                for (int[] edge : adjacencyList[u]) {
+                    int v = edge[0];
+                    int weight = edge[1];
+                    if (distances[v] > distances[u] + weight) {
+                        distances[v] = distances[u] + weight;
                     }
                 }
             }
@@ -63,9 +57,10 @@ public class ShortestPathDAG {
     private void topologicalSort(int node, boolean[] visited, Stack<Integer> stack) {
         visited[node] = true;
 
-        for (Edge edge : adjacencyList[node]) {
-            if (!visited[edge.target]) {
-                topologicalSort(edge.target, visited, stack);
+        for (int[] edge : adjacencyList[node]) {
+            int target = edge[0];
+            if (!visited[target]) {
+                topologicalSort(target, visited, stack);
             }
         }
 
@@ -84,6 +79,6 @@ public class ShortestPathDAG {
         graph.addEdge(3, 4, -1);
         graph.addEdge(4, 5, -2);
 
-        graph.shortestPath(1); // Starting node can be changed
+        graph.shortestPath(1);
     }
 }
