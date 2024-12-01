@@ -1,6 +1,6 @@
 public class InsertBeforeValue {
 
-    public static Node insertBeforeValue(Node head, int valueToInsertBefore, int newValue) {
+    public static Node insertBeforeValue(Node head, int valueBefore, int newValue) {
         // If the list is empty, return the head as-is
         if (head == null) {
             System.out.println("The list is empty.");
@@ -8,19 +8,19 @@ public class InsertBeforeValue {
         }
 
         // If the value is at the head, insert the new node before the current head
-        if (head.data == valueToInsertBefore) {
+        if (head.data == valueBefore) {
             return new Node(newValue, head);
         }
 
         // Traverse the list to find the node before the target value
         Node temp = head;
-        while (temp.next != null && temp.next.data != valueToInsertBefore) {
+        while (temp.next != null && temp.next.data != valueBefore) {
             temp = temp.next;
         }
 
         // If we reach the end of the list and do not find the value
         if (temp.next == null) {
-            System.out.println("Value " + valueToInsertBefore + " not found in the list.");
+            System.out.println("Value " + valueBefore + " not found in the list.");
             return head;
         }
 

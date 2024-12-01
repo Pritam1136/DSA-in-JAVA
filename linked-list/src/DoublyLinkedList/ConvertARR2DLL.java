@@ -1,20 +1,25 @@
 package DoublyLinkedList;
 
-class Node{
+class Node {
     int data;
     Node next;
     Node previous;
-    Node(int data, Node next, Node previous){
+
+    // Constructor with all fields
+    Node(int data, Node next, Node previous) {
         this.data = data;
         this.next = next;
         this.previous = previous;
     }
-    Node(int data){
+
+    // Constructor with only data
+    Node(int data) {
         this.data = data;
         this.next = null;
         this.previous = null;
     }
 }
+
 public class ConvertARR2DLL{
     public static Node convertArr2Dll(int[] arr) {
         Node head = new Node(arr[0]);
