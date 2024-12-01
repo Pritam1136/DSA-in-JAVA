@@ -2,42 +2,9 @@ package DoublyLinkedList;
 
 import java.util.Stack;
 
-class NodeDll{
-    int data;
-    NodeDll next;
-    NodeDll prev;
-
-    NodeDll(int data, NodeDll next, NodeDll prev){
-        this.data = data;
-        this.next = next;
-        this.prev = prev;
-    }
-    NodeDll(int data){
-        this.data = data;
-        prev = null;
-        prev = null;
-    }
-}
-
 public class ReverseADLL {
-    public static NodeDll convertToDll(int[] arr){
-        NodeDll head = new NodeDll(arr[0]);
-        NodeDll mover = head;
-        for (int i = 1; i < arr.length; i++) {
-            NodeDll temp = new NodeDll(arr[i]);
-            mover.next = temp;
-            mover = temp;
-        }
-        return head;
-    }
-    public static void print(NodeDll head){
-        while (head != null){
-            System.out.println(head.data);
-            head = head.next;
-        }
-    }
-    public static void reverse(NodeDll head){
-        NodeDll temp = head;
+    public static void reverse(Node head){
+        Node temp = head;
         Stack<Integer> stack = new Stack<>();
         while (temp != null){
             stack.push(temp.data);
@@ -50,9 +17,15 @@ public class ReverseADLL {
             temp = temp.next;
         }
     }
+    public static void print(Node head){
+        while (head != null){
+            System.out.println(head.data);
+            head = head.next;
+        }
+    }
     public static void main(String[] args) {
         int [] arr = {1,2,3,4,5};
-        NodeDll head = convertToDll(arr);
+        Node head = ConvertARR2DLL.convertArr2Dll(arr);
         reverse(head);
         print(head);
      }

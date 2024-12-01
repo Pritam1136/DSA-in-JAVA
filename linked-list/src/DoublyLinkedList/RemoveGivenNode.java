@@ -15,9 +15,9 @@ public class RemoveGivenNode {
         temp.next = temp.previous = null;
     }
     public static void main(String[] args) {
-        int[] arr = {1,2,3,};
+        int[] arr = {1,2,3,4,5,6};
         Node head = ConvertARR2DLL.convertArr2Dll(arr);
-        removeGivenNode(head.next);
-        ConvertARR2DLL.display(head.next);
+        removeGivenNode(head.next.next);
+        ConvertARR2DLL.display(head);
     }
 }
