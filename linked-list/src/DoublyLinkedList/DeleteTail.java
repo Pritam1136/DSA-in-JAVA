@@ -16,6 +16,7 @@ public class DeleteTail {
         }
 
         // Remove the tail node
+        temp.next.previous = null;
         temp.next = null; // Unlink the tail node
 
         // Return the updated head

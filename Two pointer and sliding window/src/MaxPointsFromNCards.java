@@ -13,8 +13,8 @@ public class MaxPointsFromNCards {
 
         // Move elements from left to right
         for (int i = k - 1; i >= 0; i--) {
-            lsum -= nums[i]; // Remove the last element from left
-            rsum += nums[rindex]; // Add the last element from right
+            lsum -= nums[i]; // Remove the last element from the left
+            rsum += nums[rindex]; // Add the last element from the right
             rindex--;
             maxSum = Math.max(maxSum, lsum + rsum);
         }
