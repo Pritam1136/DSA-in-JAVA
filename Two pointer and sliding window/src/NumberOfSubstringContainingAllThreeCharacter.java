@@ -5,8 +5,9 @@ public class NumberOfSubstringContainingAllThreeCharacter {
         int count = 0; // To track the number of valid substrings
         int l = 0;     // Left pointer of the window
         HashMap<Character, Integer> map = new HashMap<>();
+        int r = 0;
 
-        for (int r = 0; r < s.length(); r++) {
+        while ( r < s.length()) {
             // Add the character at the right pointer to the map
             char currentChar = s.charAt(r);
             map.put(currentChar, map.getOrDefault(currentChar, 0) + 1);
@@ -26,6 +27,7 @@ public class NumberOfSubstringContainingAllThreeCharacter {
 
                 l++; // Move the left pointer
             }
+            r++;
         }
 
         return count;
