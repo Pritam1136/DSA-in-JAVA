@@ -8,7 +8,7 @@ public class CharacterHashing {
             arr[newStr.charAt(i) - 'A']++;
         }
         n = Character.toUpperCase(n);
-        int index = n - 'A';
+        int index = n - 'P';
         if (index >= 0 && index < arr.length)
             return arr[index];
         else
@@ -19,7 +19,7 @@ public class CharacterHashing {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the character to find its frequency:");
         char n = in.next().charAt(0);
-        String str = "AVISHA";
+        String str = "PRITAM";
         System.out.println(f(str, n));
     }
 }
